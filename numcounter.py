@@ -10,11 +10,11 @@ speed_output = 0.5
 def numcounter():
     global value
     if value > max_num:
-        print ("value >",max_num)
+        print (f"value > {max_num}")
     else:
         value = value + 1
         time.sleep(speed_output)
-        print (value)
+        print (f"value: {value}")
         numcounter()
 
 numcounter()
